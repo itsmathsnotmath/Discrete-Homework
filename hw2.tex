@@ -1,0 +1,106 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}  % Add useful math symbols and environments
+\usepackage{amsfonts}          % Add fonts for sets like \mathbb{Z}
+\usepackage{enumitem}          % Better control of list formatting
+\usepackage[amsthm,thmmarks]{ntheorem}
+\newcommand{\Z}{\mathbb{Z}}
+
+\begin{document}
+
+\begin{center}
+ \LARGE{ \textbf{Discrete Math - Homework 2}} \Large \newline
+    Name:
+    % Write your name here.
+\end{center}
+
+\vspace{1em}
+
+\noindent \textbf{Instruction summary:} Your work must be uploaded to Gradescope as a single PDF file. It must be typed in LaTeX to avoid a 20\% penalty. The polished proof must start on a new page (\texttt{\textbackslash newpage}). It will be graded based on clarity (2 points), LaTeX proficiency (2 points), and proof quality (6 points), including structure and variable definition.
+
+%------------------------------
+% EXERCISES
+%------------------------------
+\section*{Exercises}
+
+\begin{enumerate}[label=\textbf{\arabic*.}, itemsep=1.2em]
+
+% QUESTION 1
+\item \emph{(3 points)} The following statements are false. For each of them, provide a counterexample, and explain why the counterexample works. For instance, for the statement ``Let \(n \in \mathbb{Z}\). If \(2n\) is even, then \(n\) is even'', you can say ``Take \(n = 3\). Then \(2n = 6\) is even, but \(n = 3\) is not.'' You can use a calculator or computer to check some values.
+
+\begin{enumerate}[label=\textbf{\alph*.}, itemsep=1em]
+    \item Let \(p \in \mathbb{Z}\). If \(p\) is prime, then \(2^p - 1\) is prime. \newline
+    % Write your answers to question 1a here.
+
+    \item Let \(a, b \in \mathbb{Z}\). If \(a \mid b\) and \(b \mid a\), then \(a = b\). \newline
+    % Write your answers to question 1b here.
+
+    \item Let \(n \in \mathbb{N}\). If \(n\) is not prime, then it has a divisor \(d\) with \(1 < d < n\). \newline
+    % Write your answers to question 1c here.
+
+\end{enumerate}
+
+% QUESTION 2
+\item \emph{(3 points)} Recall that by definition, \(x \leftrightarrow y\) means \(x \to y\) and \(y \to x\). Show that
+\[
+x \leftrightarrow y = (x \wedge y) \vee (\neg x \wedge \neg y),
+\]
+in two different ways.
+
+\begin{enumerate}[label=\textbf{\alph*.}, itemsep=0.8em]
+    \item \emph{(1 point)} Using a truth table (show all intermediary steps). \newline
+    % Write your answers to question 2a here.
+    
+    \item \emph{(2 points)} Using computational rules. \newline
+    % Write your answers to question 2b here.
+\end{enumerate}
+
+% QUESTION 3
+\item \emph{(4 points)} Simplify the following expressions using computational rules.
+
+\begin{enumerate}[label=\textbf{\alph*.}, itemsep=0.8em]
+    \item \((\neg x \vee \neg y) \to (x \wedge y)\) \newline
+    % Write your answers to question 3a here.
+    
+    \item \((((x \wedge y) \vee z) \wedge (\neg x)) \vee (\neg z)\) \newline
+    % Write your answers to question 3b here.
+    
+\end{enumerate}
+
+% QUESTION 4
+\item \emph{(5 points)} Consider a group consisting of 3 boys and 3 girls. Answer the following questions, giving a quick explanation in each case.
+
+\begin{enumerate}[label=\textbf{\alph*.}, itemsep=0.8em]
+    \item In how many ways can they sit in a row? \newline
+    % Write your answers to question 4a here.
+    
+    \item In how many ways can they sit in a row if the boys sit together and the girls sit together? \newline
+    % Write your answers to question 4b here.
+    
+    \item In how many ways can they sit in a row if only the boys are required to sit together? \newline
+    % Write your answers to question 4c here.
+
+    \item In how many ways can they sit in a row if no two people of the same sex are allowed to sit next to each other in a row? \newline
+    % Write your answers to question 4d here.
+
+    \item In how many ways can they sit together around a round table? Here, the only thing that matters is who is sitting next to whom. \newline
+    % Write your answers to question 4e here.
+\end{enumerate}
+
+\end{enumerate}
+\newpage %Please do not erase this line.
+
+%------------------------------
+% POLISHED PROOF
+%------------------------------
+\section*{Polished Proof}
+
+\emph{(10 points)} Consider $a, b, d \in \Z$. Show that $a$ and $b$ are divisible by $d$ if and only if $a u + b v$ is divisible by $d$ for any $u, v \in \Z$. \newline
+
+\noindent \emph{Claim.}
+% Write here the statement you intent to prove. E.g: "Claim: There is only one even prime number."
+
+\begin{proof}
+%Write your proof here.
+\end{proof}
+
+\end{document}

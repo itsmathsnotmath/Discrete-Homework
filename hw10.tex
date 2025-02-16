@@ -1,0 +1,156 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}  % Add useful math symbols and environments
+\usepackage{amsfonts}          % Add fonts for sets like \mathbb{Z}
+\usepackage{enumitem}          % Better control of list formatting
+\usepackage[amsthm,thmmarks]{ntheorem} %Proof formatting
+\newcommand{\Z}{\mathbb{Z}}    % Custom command for integers
+\newcommand{\E}{\mathbb{E}}	% Custom command for expected value
+\DeclareMathOperator{\Var}{Var}  % Custom command for variance
+\newcommand{\sset}{\subseteq}  % Custom command for subset notation
+\newcommand{\Id}{\mathrm{Id}} % Custom command for identity
+
+\begin{document}
+
+\begin{center}
+    {\LARGE Discrete Math - Homework 10}  \Large \newline
+    Name:
+    % Write your name here.
+\end{center}
+
+\emph{Instruction summary:} Your work must be uploaded to Gradescope as a single PDF file. It must be typed in LaTeX to avoid a 20\% penalty. The polished proof must start in a new page (\textbackslash newpage). It will be graded based on clarity (2 points), LaTeX prowess (2 points) and proof quality (6 points, including for example structure and variable definition).
+
+%------------------------------
+% EXERCISES
+%------------------------------
+\section*{Exercises:}
+
+\begin{enumerate}
+
+% QUESTION 1
+\item \emph{(4 points)} In each of the following cases: describe the sample space and the probability of each outcome; compute \( P(X = i) \) for each \( i \) for which this is not 0; compute \( E(X) \). 
+
+\begin{enumerate}
+\item \( X \) is the number shown by a die with 4 faces. \newline
+
+% Write your answers to question 1a here.
+
+\item \( X \) is 1 if you get Heads, \( -1 \) if you get Tails, for a coin whose probability to land on Heads is \( p \in [0,1] \). \newline
+
+% Write your answers to question 1b here.
+
+\item \( X \) is the number of tails when flipping two coins, one which is fair, and one which has probability \( 1/3 \) to land on Heads. \newline
+
+% Write your answers to question 1c here.
+
+\item Take a card from a standard deck of 52 cards. If its value is 1 to 5, you lose \$5; if its value is 6 to 10, you get \$1; and if it is a Jack, a Queen, or a King, you get \$5. The random variable \( X \) describes the amount that you get. \newline
+
+% Write your answers to question 1d here.
+
+\end{enumerate}
+
+% QUESTION 2
+\item \emph{(4 points)} You take the subway to go to school every day. You notice the following pattern:
+\begin{itemize}
+\item 60\% of the time, it takes you 30 minutes to get to school; 
+\item 30\% of the time, it takes you 50 minutes to get to school; 
+\item 10\% of the time, it takes you 70 minutes to get to school. 
+\end{itemize}
+
+Denote by \( X \) the random variable describing the time it takes you to go to school, in tens of minutes (so \( X \) takes values 3, 5, 7).
+
+\begin{enumerate}
+\item Compute \( \E(X) \). \newline
+
+% Write your answers to question 2a here.
+
+\item Compute \( \Var(X) \). \newline
+
+% Write your answers to question 2b here.
+
+\item Let \( Z \) be the total time it takes you to go to school in a month (20 times). Compute \( \E(Z) \) and \( \Var(Z) \). Justify your computations precisely. \newline
+
+% Write your answers to question 2c here.
+
+\item It can be shown that ``in general'', a random variable with expectation \( \mu \) and standard deviation (square root of the variance) \( \sigma \) is unlikely to take values outside of the interval \( [\mu-2\sigma, \mu+2\sigma] \). Is it likely that the total time that you spend to go to school in a month is between 700 and 900 minutes? That it is more than 1200 minutes? \newline
+
+% Write your answers to question 2d here.
+
+\end{enumerate}
+
+% QUESTION 3
+\item \emph{(2 points)} Consider the sample space \( S = \{ a, b, c \} \), with equal probability for each outcome. Define the random variables \( X \) and \( Y \) by
+\[
+X(a) = -1, \quad X(b) = 0, \quad X(c) = 1, \quad Y(a) = Y(c) = 0, \quad Y(b) = 1.
+\]
+Check that \( \Var(X+Y) = \Var(X) + \Var(Y) \), but that \( X \) and \( Y \) are not independent. \newline
+
+% Write your answers to question 3 here.
+
+% QUESTION 4
+\item \emph{(5 points)} Assume that you repeat an experiment \( n \) times independently, where the probability of success is \( p \in [0,1] \). Denote by \( Z \) the random variable describing the number of successes.
+
+\begin{enumerate}
+\item Give the sample space and the probability of each outcome. \newline
+
+% Write your answers to question 4a here.
+
+\item Explain the formula
+\[
+P(Z = k) = \binom{n}{k} p^k (1-p)^{n-k},
+\]
+where \( k \in \{0, 1, 2, \dots, n \} \). \newline
+
+% Write your answers to question 4b here.
+
+\item Show by induction that
+\[
+\E(Z) = np.
+\] \newline
+
+% Write your answers to question 4c here.
+
+\item Show by induction that
+\[
+\E(Z^2) = n^2 p^2 - np^2 + np,
+\]
+and deduce that \( \Var(Z) = np(1-p) \). \newline
+
+% Write your answers to question 4d here.
+
+\item Recover \( \E(Z) = np \)
+and
+\( \E(Z^2) = n^2 p^2 - np^2 + np \)
+by using properties of the expectation and of the variance. \newline
+
+% Write your answers to question 4e here.
+\end{enumerate}
+
+\emph{Hint:} Feel free to use that:
+    \[ \sum_{k=0}^n \binom{n}{k} = 2^n \]
+    \[
+     \sum_{k=0}^n k \binom{n}{k} = n 2^{n-1} \]
+\[
+    \sum_{k=0}^n k^2  \binom{n}{k} = \sum_{k=0}^n k  \binom{n}{k} + n (n-1) 2^{n-2} 
+    %= n 2^{n-1}  + n (n-1) 2^{n-2} 
+    =  n (n+1) 2^{n-2} 
+    \]
+
+\end{enumerate}
+\newpage %Please do not erase this line.
+
+%------------------------------
+% POLISHED PROOF
+%------------------------------
+\section*{Polished proof:} 
+
+\emph{(10 points)} Let \( E \) and \( F \) be events in a sample space \( (S,P) \). Prove if \( E \) and \( F \) are independent, then \( E \) and \( F^C \) (the complement of \( F \)) are independent.
+
+\noindent \emph{Claim.}
+% Write here the statement you intent to prove. E.g: "Claim: There is only one even prime number."
+
+\begin{proof}
+%Write your proof here.
+\end{proof}
+
+
+\end{document}

@@ -1,0 +1,154 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}  % Add useful math symbols and environments
+\usepackage{amsfonts}          % Add fonts for sets like \mathbb{Z}
+\usepackage{enumitem}          % Better control of list formatting
+\usepackage[amsthm,thmmarks]{ntheorem} %Proof formatting
+\newcommand{\Z}{\mathbb{Z}}    % Custom command for integers
+\newcommand{\sset}{\subseteq}  % Custom command for subset notation
+\newcommand{\Id}{\mathrm{Id}} % Custom command for identity
+\usepackage{graphicx}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE Discrete Math - Homework 9}  \Large \newline
+    Name:
+    % Write your name here.
+\end{center}
+
+\emph{Instruction summary:} Your work must be uploaded to Gradescope as a single PDF file. It must be typed in LaTeX to avoid a 20\% penalty. The polished proof must start in a new page (\textbackslash newpage). It will be graded based on clarity (2 points), LaTeX prowess (2 points) and proof quality (6 points, including for example structure and variable definition).
+
+%------------------------------
+% EXERCISES
+%------------------------------
+\section*{Exercises:}
+
+\begin{enumerate}
+
+% QUESTION 1
+\item \emph{(5 points)} In each of the following cases, describe the sample space, give its size, and compute the probability of the event \( A \).
+
+\begin{enumerate}
+\item Flip a coin four times, \( A \) is the event that there is the same number of H and T. \newline
+
+% Write your answers to question 1a here.
+
+\item Roll three dice, \( A \) is the event that they show the same number. \newline
+
+% Write your answers to question 1b here.
+
+\item Flip a coin ten times, \( A \) is the event that there is the same number of H and T. \newline
+
+% Write your answers to question 1c here.
+
+\item Flip a coin \( n \) times, \( A \) is the event that there are \( h \) H. \newline
+
+% Write your answers to question 1d here.
+
+\item Roll three dice, \( A \) is the event that the sum of the numbers showed is even. \newline
+
+% Write your answers to question 1e here.
+\end{enumerate}
+
+% QUESTION 2
+\item \emph{(3 points)} An urn contains 7 red balls \( R_1, R_2, \dots, R_7 \) and 3 blue balls \( B_1, B_2, B_3 \).
+
+\begin{enumerate}
+\item \emph{(1 point)} Assume first that you pick two balls one after the other, without replacement.
+
+\begin{enumerate}
+\item Describe the sample space, its size, and the probability of each outcome. \newline
+
+% Write your answers to question 2a.i here.
+
+\item Compute the probability to pick a blue ball then a red one; a red ball then a blue one; one ball of each color; two blue balls. \newline
+
+% Write your answers to question 2a.ii here.
+
+\end{enumerate}
+
+\item \emph{(2 points)} Now assume that you pick all 10 balls one after the other, without replacement.
+
+\begin{enumerate}
+\item Describe the sample space, its size, and the probability of each outcome. \newline
+
+% Write your answers to question 2b.i here.
+\item Compute the probability that the first ball picked is blue, and the last one is red. \newline
+
+% Write your answers to question 2b.ii here.
+\item Compute the probability that the first and last ball picked are blue. \newline
+
+% Write your answers to question 2b.iii here.
+\item Compute the probability that you pick all red balls first, then all blue balls. \newline
+
+% Write your answers to question 2b.iv here.
+\end{enumerate}
+\end{enumerate}
+
+% QUESTION 3
+\item \emph{(3 points)} Roll two dice.
+
+\begin{enumerate}
+\item What is the sample space? What is its size? What is the probability of each outcome? \newline
+
+% Write your answers to question 3a here.
+
+\item Consider the events \( A = \) ``the first die shows 1'' and \( B = \) ``the sum of the two dice is even''. Compute \( P(A), P(B), P(A \cap B), P(A | B), P(B | A) \). Are these events independent? Why (informally) does this make sense? \newline
+
+% Write your answers to question 3b here.
+
+\item Same questions for the events \( A = \) ``the sum of the dice is 10 or more'' and \( B = \) ``the first die shows an even number''. \newline
+
+% Write your answers to question 3c here.
+\end{enumerate}
+
+% QUESTION 4
+\item \emph{(4 points)} Consider the following data about breast cancer.
+\begin{itemize}
+\item 2\% of women have breast cancer.
+\item Mammography correctly identifies 84\% of breast cancers: this means that out of all women who have cancer, 84\% receive a positive test result.
+\item There are 8\% of false positives: this means that out of all women who do not have cancer, 8\% receive a positive test result.
+\end{itemize}
+Take a woman at random and consider the event \( C \) that she has cancer, and \( P \) that she gets a positive test result. Their complements are \( \bar{C} \) (the event that she does not have cancer) and \( \bar{P} \) (the event that she gets a negative test result).
+
+\medskip
+
+\textit{Show your computations, then use a calculator to write your result as a percentage rounded to one decimal place.}
+
+\begin{enumerate}
+\item Interpret the data in terms of probabilities involving the events \( C, P, \bar{C}, \bar{P} \). You should write three probabilities, one equal to 2\%, one to 84\%, and one to 8\%. No need to explain. \newline
+
+% Write your answers to question 4a here.
+
+\item What is the probability that a woman gets a positive test result? \newline
+
+% Write your answers to question 4b here.
+
+\item A woman gets a mammography and gets a positive result. What is the probability that she actually has breast cancer? Be careful to interpret this question carefully as a probability. \newline
+
+% Write your answers to question 4c here.
+
+\item Now, assume that a woman is in a population at risk (e.g. due to age or family history), and it is estimated that there is a 15\% chance that she has cancer prior to the test. What does it change in terms of the data given? Then assume that this woman gets a positive test, and compute the probability that she actually has cancer. Compare to the previous question and explain the difference. \newline
+
+% Write your answers to question 4d here.
+\end{enumerate}
+
+
+\end{enumerate}
+\newpage %Please do not erase this line.
+
+%------------------------------
+% POLISHED PROOF
+%------------------------------
+\section*{Polished proof:} 
+
+\emph{(10 points)} Suppose that \( (S,P_1) \) and \( (S,P_2) \) are two sample spaces that have the same set of outcomes, \( S \). Prove by contradiction that if there exists an outcome \( s \in S \) such that \( P_1(s) < P_2(s) \), then there must exist another outcome \( t \in S \) such that \( P_1(t) > P_2(t) \).
+
+\noindent \emph{Claim.}
+% Write here the statement you intent to prove. E.g: "Claim: There is only one even prime number."
+
+\begin{proof}
+%Write your proof here.
+\end{proof}
+
+\end{document}

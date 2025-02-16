@@ -1,0 +1,107 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}  % Add useful math symbols and environments
+\usepackage{amsfonts}          % Add fonts for sets like \mathbb{Z}
+\usepackage{enumitem}          % Better control of list formatting
+\usepackage[amsthm,thmmarks]{ntheorem}
+\newcommand{\Z}{\mathbb{Z}}    % Custom command for integers
+\newcommand{\sset}{\subseteq}  % Custom command for subset notation
+
+\begin{document}
+
+\begin{center}
+    {\LARGE Discrete Math - Homework 3} \Large \newline
+    Name:
+    % Write your name here.
+\end{center}
+
+\vspace{1em}
+
+\noindent \textbf{Instruction summary:} Your work must be uploaded to Gradescope as a single PDF file. It must be typed in LaTeX to avoid a 20\% penalty. The polished proof must start on a new page (\texttt{\textbackslash newpage}). It will be graded based on clarity (2 points), LaTeX proficiency (2 points), and proof quality (6 points), including structure and variable definition.
+
+%------------------------------
+% EXERCISES
+%------------------------------
+\section*{Exercises}
+
+\begin{enumerate}[itemsep=1.2em]
+
+% QUESTION 1
+\item \emph{(5 points)} Describe explicitly in English the following sets, then give their cardinality.
+
+\begin{enumerate}[label=\textbf{\alph*.}, itemsep=1em]
+    \item \(\{ x \in 2^{\mathbb{Z}} : 5 \in x \}\) \newline
+    % Write your answers to question 1a here.
+
+    \item \(\{ x \in 2^{\mathbb{Z}} : x \subseteq \{ 1, 2, 3 \} \}\)\newline
+    % Write your answers to question 1b here.
+
+    \item \(\{ x \in 2^{\mathbb{Z}} : x \subseteq \{ 1, 2, \{ 3, 4 \} \} \}\) \newline
+    % Write your answers to question 1c here.
+
+    \item \(\{ x \in 2^{\mathbb{Z}} : x \in \{ 1, 2, \{ 3, 4 \} \} \}\) \newline
+    % Write your answers to question 1d here.
+
+    \item \(\{ x \in 2^{\mathbb{Z}} : y \in x \implies y = 0 \}\) \newline
+    % Write your answers to question 1e here.
+
+\end{enumerate}
+
+% QUESTION 2
+\item \emph{(3 points)} Let \( a, b \in \mathbb{Z} \) and
+\[
+A = \{ n \in \mathbb{Z} : a \mid n \}, \quad B = \{ n \in \mathbb{Z} : b \mid n \}.
+\]
+
+Prove that \( A = B \) if and only if \( a = \pm b \).\newline
+% Write your answers to question 2 here.
+
+
+% QUESTION 3
+\item \emph{(5 points)} For each of the following statements, describe it in English, and say if it is true or false (without proof). Then write its negation using quantifiers, and express this negation in English. For instance, the statement \(\forall x \in \mathbb{Z} \; x < 0\) means every integer is negative, and it is false. Its negation is \(\exists x \in \mathbb{Z} \; x \geq 0\), which means that there exists a nonnegative integer.
+
+\begin{enumerate}[label=\textbf{\alph*.}, itemsep=1em]
+    \item \(\forall x \in \mathbb{Z} \; \forall y \in \mathbb{Z} \; x + y = 0\)\newline
+% Write your answers to question 3a here.
+
+    \item \(\forall x \in \mathbb{Z} \; \exists y \in \mathbb{Z} \; x + y = 0\)\newline
+% Write your answers to question 3b here.
+
+    \item \(\forall n \in \mathbb{Z} \; \exists k \in \mathbb{Z} \; \exists d \in \mathbb{Z} \; n = kd\)\newline
+% Write your answers to question 3c here.
+
+    \item \(\forall n \in \mathbb{Z} \; \exists k \in \mathbb{Z} \; \exists d \in \mathbb{Z} \; k + n = 2d\)\newline
+% Write your answers to question 3d here.
+
+    \item \(\exists n \in \mathbb{Z} \; \forall k \in \mathbb{Z} \; \exists d \in \mathbb{Z} \; k + n = 2d\)\newline
+% Write your answers to question 3e here.
+
+\end{enumerate}
+
+% QUESTION 4
+\item \emph{(2 points)} For Statements (d) and (e) of Exercise 3: prove it if it is true, and prove the negation if it is false. \newline
+% Write your answers to question 4 here.
+
+
+\end{enumerate}
+\newpage %Please do not erase this line.
+
+%------------------------------
+% POLISHED PROOF
+%------------------------------
+\section*{Polished Proof}
+
+\emph{(10 points)} Let \( a, b \in \mathbb{Z} \) and
+\[
+A = \{ n \in \mathbb{Z} : a \mid n \}, \quad B = \{ n \in \mathbb{Z} : b \mid n \}.
+\]
+
+Prove that if \( b \mid a \), then \( A \sset B \).\newline
+
+\noindent \emph{Claim.}
+% Write here the statement you intent to prove. E.g: "Claim: There is only one even prime number."
+
+\begin{proof}
+%Write your proof here.
+\end{proof}
+
+\end{document}

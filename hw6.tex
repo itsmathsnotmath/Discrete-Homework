@@ -1,0 +1,127 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath, amssymb}  % Add useful math symbols and environments
+\usepackage{amsfonts}          % Add fonts for sets like \mathbb{Z}
+\usepackage{enumitem}          % Better control of list formatting
+\usepackage[amsthm,thmmarks]{ntheorem} %Proof formatting
+\newcommand{\Z}{\mathbb{Z}}    % Custom command for integers
+\newcommand{\sset}{\subseteq}  % Custom command for subset notation
+
+\begin{document}
+
+\begin{center}
+	{\LARGE Discrete Math - Homework 6} \Large \newline
+    Name:
+    % Write your name here.
+\end{center}
+
+\emph{Instruction summary:} Your work must be uploaded to Gradescope as a single PDF file. It must be typed in LaTeX to avoid a 20\% penalty. The polished proof must start in a new page (\textbackslash{newpage}). It will be graded based on clarity (2 points), LaTeX prowess (2 points) and proof quality (6 points, including for example structure and variable definition).
+
+%------------------------------
+% EXERCISES
+%------------------------------
+\section*{Exercises:}
+
+\begin{enumerate}
+
+% QUESTION 1
+\item \emph{(3 points)}
+
+\begin{enumerate}
+\item Let \(n \in \mathbb{Z}\). Show that if \(n^2 - 6n + 5\) is even, then \(n\) is odd.\newline
+    % Write your answers to question 1a here.
+\item Let \(a, b, c \in \mathbb{Z}\). Show that if \(a^2 + b^2 = c^2\), then \(a\) or \(b\) is even.\newline
+    % Write your answers to question 1b here.
+\item Let \(p \in \mathbb{Z}\). Show that if \(p\) is prime, then \(\sqrt{p}\) is irrational (that is, it is not a rational number). You can use the following two facts:
+\begin{itemize}
+\item Any rational number \(x > 0\) can be written \(x = \frac{a}{b}\) where \(a, b\) are positive natural numbers with no common factor \(c \geq 2\).
+\item If \(q\) is prime and \(q \mid n^2\), then \(q \mid n\).
+\end{itemize} 
+    % Write your answers to question 1c here.
+\end{enumerate}
+
+
+% QUESTION 2
+\item \emph{(4 points)} The goal of this exercise is to show the following variant of the well-ordering principle (WOP).
+\paragraph{Theorem:}
+\emph{Assume that \(B \subseteq \mathbb{Z}\) is not empty and bounded above, which means that there exists \(M \in \mathbb{Z}\) such that \(n \leq M\) for all \(n \in B\). Then \(B\) has a largest element. In other words, there exists \(n_0 \in B\) such that \(n \leq n_0\) for all \(n \in B\). This element is denoted by \(n_0 = \max B\).}
+
+To this end, consider \(B\) and \(M\) as in the previous statement, and define the set
+\[
+A = \{ M - n : n \in B\}.
+\]
+
+For example, if \( B=\{-1, 5,6\}\) and \( M=10\), then \(A=\{4, 5,11\}\).
+
+\begin{enumerate}
+\item Why does the WOP apply to \(A\)? \newline
+\emph{Hint: Show that \( A\) is a non-empty subset of \(\mathbb{N}\).} \newline
+    % Write your answers to question 2a here.
+
+\item Consider \(m_0 = \min A\), and conclude the proof. \newline
+\emph{Hint: Use the standard WOP on A to guarantee that it has a minimum \(m_0\). Then find \(n_0\) as a function of \(m_0\). Show that it is larger than any other \(n \in \mathbb{B}\) to prove the theorem above.}\newline
+    % Write your answers to question 2b here.
+
+\end{enumerate}
+
+
+% QUESTION 3
+\item \emph{(4 points)} \textit{For this exercise, you will need the result of Exercise 2.}
+
+\begin{enumerate}
+\item We want to show that any integer is either even or odd. It is enough to do so for natural numbers, so let us take \(n \in \mathbb{N}\) and define the set
+\[
+B = \{ k \in \mathbb{N} : 2k \leq n \}.
+\]
+So, for example, if \( n=7 \) then \( B=\{0,1,2,3\}\); and if \(n=4\) then \( B=\{0,1,2\}\).\newline
+Show that the result of Ex. 2 applies to \(B\), consider \(q = \max B\), show that \(r = n - 2q\) can only be 0 or 1, and conclude. \newline
+\emph{Hint: Prove that \( r\ge 0\) and then prove by contradiction that \(r< 2\)}. \newline
+    % Write your answers to question 3a here.
+
+
+\item We want to show that any rational number \(x > 0\) can be written \(x = \frac{a}{b}\) where \(a, b\) are positive natural numbers with no common factor \(c \geq 2\). So let us take a rational \(x > 0\), which by definition, we can write \(x = \frac{p}{q}\) with \(p, q \in \mathbb{N}\), \(p, q \neq 0\). Consider
+\[
+B = \{n \in \mathbb{N} : n \mid p \wedge n \mid q \}.
+\]
+Show that the result of Ex. 2 applies to \(B\), consider \(n_0 = \max B\), and then show that \(a = \frac{p}{n_0}\) and \(b = \frac{q}{n_0}\) satisfy the conditions.\newline
+\emph{Hint: Proof that \(a\) and \( b\) are positive integers, \(\frac{a}{b}=x\) and proof by contradiction that there is no common factor \(c \geq 2\).}
+    % Write your answers to question 3b here.
+
+\end{enumerate}
+
+
+% QUESTION 4
+\item \emph{(4 points)} Consider a sequence defined by \(u_0 \in \mathbb{R}\) and, for \(n \geq 0\),
+\[
+u_{n+1} = a u_n + b,
+\]
+where \(a, b \in \mathbb{R}\) and \(a \neq 1\). Then prove by induction that for all \(n \in \mathbb{N}\),
+\[
+u_n = a^n u_0 + b \frac{1 - a^n}{1-a}.
+\] \newline
+    % Write your answers to question 4 here.
+
+
+\end{enumerate}
+\newpage %Please do not erase this line.
+
+%------------------------------
+% POLISHED PROOF
+%------------------------------
+\section*{Polished proof:} 
+
+\emph{(10 points)} Show by induction that for all \(n \in \mathbb{N}\), 
+\[
+\sum_{k = 0}^n k (k!) = (n+1)! - 1.
+\]
+
+
+
+\noindent \emph{Claim.}
+% Write here the statement you intent to prove. E.g: "Claim: There is only one even prime number."
+
+\begin{proof}
+%Write your proof here.
+\end{proof}
+
+
+\end{document}

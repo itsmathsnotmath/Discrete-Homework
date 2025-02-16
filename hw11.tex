@@ -1,0 +1,123 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath, amssymb}  % Add useful math symbols and environments
+\usepackage{amsfonts}          % Add fonts for sets like \mathbb{Z}
+\usepackage{enumitem}          % Better control of list formatting
+\usepackage[amsthm,thmmarks]{ntheorem} %Proof formatting
+\newcommand{\Z}{\mathbb{Z}}    % Custom command for integers
+\newcommand{\sset}{\subseteq}  % Custom command for subset notation
+\newcommand{\GCD}{\mathrm{GCD}}
+
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE Discrete Math - Homework 11}  \Large \newline
+    Name:
+    % Write your name here.
+\end{center}
+
+\emph{Instruction summary:} Your work must be uploaded to Gradescope as a single PDF file. It must be typed in LaTeX to avoid a 20\% penalty. The polished proof must start in a new page (\textbackslash newpage). It will be graded based on clarity (2 points), LaTeX prowess (2 points) and proof quality (6 points, including for example structure and variable definition).
+
+%------------------------------
+% EXERCISES
+%------------------------------
+\section*{Exercises:}
+
+\begin{enumerate}
+
+% QUESTION 1
+\item \emph{(3 points)} In the following cases, use Euclid's algorithm to find \( \GCD(a,b) \), and then give \( u, v \in \mathbb{Z} \) such that \( a u + b v = \GCD(a,b) \). Show all work.
+
+\begin{enumerate}
+\item \( a = 312 \), \( b = 216 \). \newline
+
+% Write your answers to question 1a here.
+
+\item \( a = 255 \), \( b = 155 \). \newline
+
+% Write your answers to question 1b here.
+
+\item \( a = 412 \), \( b = 281 \). \newline
+
+% Write your answers to question 1c here.
+
+\end{enumerate}
+
+% QUESTION 2
+\item \emph{(4 points)} Use B\'ezout's identity to show the following results.
+
+\begin{enumerate}
+\item For any \( n \in \mathbb{Z} \), the integers \( 2n + 1 \) and \( 4n^2 + 1 \) are coprime. \newline
+
+% Write your answers to question 2a here.
+
+\item For any \( n \in \mathbb{Z} \), the integers \( 2n^2 + 10n + 13 \) and \( n + 3 \) are coprime. \newline
+
+% Write your answers to question 2b here.
+\end{enumerate}
+
+% QUESTION 3
+\item \emph{(4 points)} Let \( n \in \mathbb{Z} \) with \( n \geq 1 \). For \( a \in \mathbb{Z} \), we say that \( b \) is an \textit{inverse of \( a \) modulo \( n \)} if
+\[
+ab \equiv 1 \pmod{n}.
+\] 
+\begin{enumerate}
+\item For \( n = 10 \), find an inverse modulo \( n \) of \( 1, 3, 7, 9 \). \newline
+
+% Write your answers to question 3a here.
+
+\item Still for \( n = 10 \), prove that \( a = 2 \) does not have an inverse modulo \( n \). \newline
+
+% Write your answers to question 3b here.
+
+\item For general \( n \geq 1 \), show that \( a \in \mathbb{Z} \) has an inverse modulo \( n \) if and only if \( a \) and \( n \) are coprime. \newline
+
+% Write your answers to question 3c here.
+
+\item When \( a \) has an inverse modulo \( n \), explain how to find it. Apply this to find the inverse of 15 modulo 26. \newline
+
+% Write your answers to question 3d here.
+\end{enumerate}
+
+% QUESTION 4
+\item \emph{(4 points)}
+
+\begin{enumerate}
+\item Let \( a, b, c \in \mathbb{Z} \) with \( c \geq 1 \) and \( a \) and \( b \) not both 0. Show that \( \GCD(ca, cb) = c \times \GCD(a,b) \). \newline
+
+% Write your answers to question 4a here.
+
+\item For \( n \in \mathbb{N} \), define \( u_n = 9 \times 2^{n+1} - 6 \). Show that for all \( n \in \mathbb{N} \), \( u_n \) is divisible by 6. \newline
+
+% Write your answers to question 4b here.
+
+\item We can then define a sequence of integers \( (v_n) \) by \( v_n = \frac{u_n}{6} \). Show that for all \( n \in \mathbb{N} \), \( v_n \) and \( v_{n+1} \) are coprime. \newline
+
+% Write your answers to question 4c here.
+
+\item Deduce \( \GCD(u_n, u_{n+1}) \) for \( n \in \mathbb{N} \). Check your result for \( n = 0, 1, 2 \) (do it by hand, no need to apply Euclid's algorithm). \newline
+
+% Write your answers to question 4d here.
+\end{enumerate}
+
+\end{enumerate}
+\newpage %Please do not erase this line.
+
+%------------------------------
+% POLISHED PROOF
+%------------------------------
+\section*{Polished proof:} 
+
+\emph{(10 points)} Let \( a, b \in \mathbb{Z} \). Then \( a \) and \( b \) are coprime if and only if \( a \) and \( b^2 \) are coprime.
+
+\emph{Hint: Use B\'ezout's identity.}
+
+\noindent \emph{Claim.}
+% Write here the statement you intent to prove. E.g: "Claim: There is only one even prime number."
+
+\begin{proof}
+%Write your proof here.
+\end{proof}
+
+\end{document}
