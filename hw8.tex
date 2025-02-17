@@ -102,19 +102,12 @@ Consider sets \( A, B, C \), and functions \( f : A \to B \) and \( g : B \to C 
 % Write your answers to question 4a here.
 
 \item Consider a \( 8 \times 8 \) chessboard, with each square colored either black or white. Show that there must be two L-regions that are colored identically. Here, a L-shaped region consists of 5 adjacent squares shaped like an L, as in the picture below. \newline
-\begin{center}
+\begin{center} %% This is tikz. All of the code below is to draw the figure. Don't change any of it!
 \begin{tikzpicture}[scale=0.69]
-            \drawsquare{0}{7}\drawsquare{2}{7}\drawsquare{3}{7}\drawsquare{5}{7}
-            \drawsquare{2}{6}\drawsquare{4}{6}\drawsquare{6}{6}\drawsquare{7}{6}
-            \drawsquare{1}{5}\drawsquare{3}{5}\drawsquare{5}{5}\drawsquare{6}{5}
-            \drawsquare{4}{4}\drawsquare{7}{4}
-            \drawsquare{1}{3}\drawsquare{2}{3}\drawsquare{3}{3}\drawsquare{5}{3}
-            \drawsquare{0}{2}\drawsquare{3}{2}\drawsquare{6}{2}
-            \drawsquare{3}{1}\drawsquare{5}{1}\drawsquare{6}{1}
-            \drawsquare{1}{0}\drawsquare{2}{0}\drawsquare{6}{0}\drawsquare{7}{0}
-            \draw[thick] (0,0) grid (8,8);
-            \drawL{0}{3}
-            \drawL{4}{1}
+            \drawsquare{0}{7}\drawsquare{2}{7}\drawsquare{3}{7}\drawsquare{5}{7}\drawsquare{2}{6}\drawsquare{4}{6}\drawsquare{6}{6}\drawsquare{7}{6}
+            \drawsquare{1}{5}\drawsquare{3}{5}\drawsquare{5}{5}\drawsquare{6}{5}\drawsquare{4}{4}\drawsquare{7}{4}\drawsquare{1}{3}\drawsquare{2}{3}
+            \drawsquare{3}{3}\drawsquare{5}{3}\drawsquare{0}{2}\drawsquare{3}{2}\drawsquare{6}{2}\drawsquare{3}{1}\drawsquare{5}{1}\drawsquare{6}{1}
+            \drawsquare{1}{0}\drawsquare{2}{0}\drawsquare{6}{0}\drawsquare{7}{0} \draw[thick] (0,0) grid (8,8); \drawL{0}{3} \drawL{4}{1}
         \end{tikzpicture}
 \end{center}
 
