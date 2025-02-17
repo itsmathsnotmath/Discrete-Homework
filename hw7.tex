@@ -112,18 +112,18 @@ How many different paths are there for a given value of \( n \)? The solutions f
         \foreach\x in {0}{\foreach\y in {0}{\filldraw ({\x+0.5},{\y+2}) circle(.5ex);}}
         
         \draw (-2/3,0.65) node {$\mathbf{n=2}$}; \draw (-2/3,0.35) node {$2$ paths}; 
-        \draw[line width=1mm,red] (0.05,0) -- (0.05,1) -- (0.95,1); 
-        \draw[line width=1mm,blue] (0,0) -- (1.05,0) -- (1.05,0.95);
+        \draw[line width=1mm,red] (0,0) -- (0,1) -- (1,1); 
+        \draw[line width=1mm,blue] (0,0) -- (1,0) -- (1,1);
         \foreach\x in {0,1}{\foreach\y in {0,1}{\filldraw ({\x},{\y}) circle(.5ex);}}
         
         \draw (7/3,2.15) node {$\mathbf{n=1}$}; \draw (7/3,1.85) node {$1$ path}; 
-        \draw[line width=1mm,blue] (3.50,2) -- (4.55,2);
+        \draw[line width=1mm,blue] (3.5,2) -- (4.5,2);
         \foreach\x in {0,1}{\foreach\y in {0}{\filldraw ({\x+3.5},{\y+2}) circle(.5ex);}}
         
         \draw (7/3,0.65) node {$\mathbf{n=3}$}; \draw (7/3,0.35) node {$3$ paths}; 
-        \draw[line width=1mm,red] (3.05,0) -- (3.05,1) -- (4.95,1) -- (4.95,1);
-        \draw[line width=1mm,blue] (3,0) -- (4.05,0) -- (4.05,0.95) -- (5, 0.95) -- (5,1);
-        \draw[line width=1mm,ForestGreen]   (3,-0.05) -- (5,-0.05) -- (5.05,0) -- (5.05,1);
+        \draw[line width=1mm,red] (3,0) -- (3,1) -- (5,1);
+        \draw[line width=1mm,blue] (3,0) -- (4,0) -- (4,0.95) -- (5, 0.95) -- (5,1);
+        \draw[line width=1mm,ForestGreen]   (3,-0.05) -- (5,-0.05) -- (5,1);
         \foreach\x in {0,1,2}{\foreach\y in {0,1}{\filldraw ({\x+3},{\y}) circle(.5ex);}}
         
         \draw ({19/3-6},{1.15-3}) node {$\mathbf{n=4}$}; \draw ({19/3-6},{0.85-3}) node {$6$ paths};
