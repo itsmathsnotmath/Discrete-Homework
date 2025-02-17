@@ -123,16 +123,16 @@ How many different paths are there for a given value of \( n \)? The solutions f
         \draw (7/3,0.65) node {$\mathbf{n=3}$}; \draw (7/3,0.35) node {$3$ paths}; 
         \draw[line width=1mm,red] (3.05,0) -- (3.05,1) -- (4.95,1) -- (4.95,1);
         \draw[line width=1mm,blue] (3,0) -- (4.05,0) -- (4.05,0.95) -- (5, 0.95) -- (5,1);
-        \draw[line width=1mm,ForestGreen]   (3,-0.05) -- (5.05,-0.05) -- (5.05,1);
+        \draw[line width=1mm,ForestGreen]   (3,-0.05) -- (5,-0.05) -- (5.05,0) -- (5.05,1);
         \foreach\x in {0,1,2}{\foreach\y in {0,1}{\filldraw ({\x+3},{\y}) circle(.5ex);}}
         
         \draw ({19/3-6},{1.15-3}) node {$\mathbf{n=4}$}; \draw ({19/3-6},{0.85-3}) node {$6$ paths};
-        \draw[line width=1mm,violet] (0.95,-3) -- (0.95,-0.95) -- (3,-0.95); 
+        \draw[line width=1mm,violet] (0.95,-3) -- (0.95,-1) -- (1,-0.95) -- (3,-0.95); 
         \draw[line width=1mm,yellow] (1,-3) -- (1,-1.95) -- (1.95,-1.95) -- (1.95,-1) -- (3,-1); 
         \draw[line width=1mm,red] (1.05,-3) -- (1.05,-2) -- (2.95,-2) -- (2.95,-1);
         \draw[line width=1mm,orange] (1,-2.95) -- (2,-2.95) -- (2,-1.05) -- (3,-1.05); 
         \draw[line width=1mm,blue] (1,-3) -- (2.05,-3) -- (2.05,-2.05) -- (3,-2.05) -- (3,-1);
-        \draw[line width=1mm,ForestGreen] (1,-3.05) -- (3.05,-3.05) -- (3.05,-1);
+        \draw[line width=1mm,ForestGreen] (1,-3.05) -- (3,-3.05) -- (3.05,-3) -- (3.05,-1);
         \foreach\x in {0,1,2}{\foreach\y in {0,1,2}{\filldraw ({\x+1},{\y-3}) circle(.5ex);}}
     \end{tikzpicture}
 \end{center}
